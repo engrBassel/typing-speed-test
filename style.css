@@ -1,0 +1,185 @@
+:root {
+  --main-color: #2196f3;
+  --play-color: #4caf50;
+  --danger-color: #f44336;
+  --bg-color: #f0f8ff;
+  --main-radius: 6px;
+  --main-transition: 450ms;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+header {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1em;
+  background-color: var(--main-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  border-bottom-left-radius: var(--main-radius);
+  border-bottom-right-radius: var(--main-radius);
+}
+main {
+  margin: 1em auto;
+  width: 90%;
+  min-height: calc(100svh - (150.4px + 2em));
+  padding: 1em;
+  background-color: var(--bg-color);
+  text-align: center;
+  -webkit-border-radius: var(--main-radius);
+  -moz-border-radius: var(--main-radius);
+  -ms-border-radius: var(--main-radius);
+  -o-border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
+}
+main .play {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+main .play button,
+main .play select {
+  border: none;
+  padding: 0.5em 1.5em;
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: var(--main-radius);
+  -moz-border-radius: var(--main-radius);
+  -ms-border-radius: var(--main-radius);
+  -o-border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
+}
+main .play button {
+  background-color: var(--play-color);
+}
+main .play select {
+  background-color: var(--main-color);
+}
+main .message {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+main .message .lvl {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main .message .seconds {
+  color: var(--danger-color);
+  font-weight: bold;
+}
+main .control {
+  display: none;
+}
+main .control.show {
+  display: block;
+  margin-bottom: 1em;
+}
+main .control .time {
+  font-size: 1.5rem;
+}
+main .control .time span {
+  color: var(--danger-color);
+  font-weight: bold;
+}
+main .the-word,
+main input,
+main .upcoming-words {
+  box-shadow: -2px 2px 5px #aaa;
+  display: none;
+}
+main .the-word.show {
+  display: block;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  -webkit-border-radius: var(--main-radius);
+  -moz-border-radius: var(--main-radius);
+  -ms-border-radius: var(--main-radius);
+  -o-border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
+}
+main .the-word.good {
+  color: var(--play-color);
+}
+main .the-word.bad {
+  color: var(--danger-color);
+}
+main input.show {
+  display: block;
+  border: none;
+  margin: 0 auto 1em;
+  width: max(40%, 256px);
+  padding: 1em;
+  font-size: 1.4rem;
+  text-align: center;
+  caret-color: var(--main-color);
+  -webkit-border-radius: var(--main-radius);
+  -moz-border-radius: var(--main-radius);
+  -ms-border-radius: var(--main-radius);
+  -o-border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
+}
+main input:focus {
+  outline: none;
+  border: 3px solid var(--main-color);
+}
+main .upcoming-words.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  -webkit-border-radius: var(--main-radius);
+  -moz-border-radius: var(--main-radius);
+  -ms-border-radius: var(--main-radius);
+  -o-border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
+}
+main .upcoming-words span {
+  padding: 0.25em;
+  background-color: var(--main-color);
+  color: #fff;
+  -webkit-border-radius: var(--main-radius);
+  -moz-border-radius: var(--main-radius);
+  -ms-border-radius: var(--main-radius);
+  -o-border-radius: var(--main-radius);
+  border-radius: var(--main-radius);
+}
+footer {
+  margin: 0 auto;
+  width: 90%;
+  height: 75.2px;
+  padding: 1em;
+  background-color: var(--main-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  border-top-left-radius: var(--main-radius);
+  border-top-right-radius: var(--main-radius);
+}
+footer .got,
+footer .total {
+  color: #fff;
+  font-weight: bold;
+}

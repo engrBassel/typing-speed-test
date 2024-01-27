@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing speed test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Typing speed test</header>
+    <main>
+      <section class="play">
+        <select name="level" id="level" title="select level here">
+          <option value="easy">Easy - 10s/word</option>
+          <option value="normal">Normal - 7s/word</option>
+          <option value="hard">Hard - 3s/word</option>
+        </select>
+        <button type="button">Start playing</button>
+      </section>
+      <section class="message">Level: <span class="lvl"></span></section>
+      <section class="control">
+        <div class="time">Time left: <span></span> seconds</div>
+      </section>
+      <section class="the-word"></section>
+      <input type="text" title="type here" />
+      <section class="upcoming-words"></section>
+    </main>
+    <footer>
+      Score: <span class="got"></span> of <span class="total"></span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
